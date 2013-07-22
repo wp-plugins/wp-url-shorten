@@ -31,7 +31,7 @@ Thanks!
 
 == Screenshots ==
 
-1. The Get Shortlink button in Post Editor
+1. The Get Shortlink button in Post Editor screenshot-1.png
 
 == Changelog ==
 
