@@ -1,13 +1,13 @@
-=== refli Short URLs ===
+=== WP URLs Shorten ===
 Contributors: Ali
 Donate link: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
-Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging, refli
+Tags: short url, short, url, url shorten, shorten url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging, refli
 Requires at least: 3.0
 Tested up to: 3.6
 Stable tag: trunk
 License: GPLv3
 
-Automatically shortens the blog post URL via ref.li.
+Automatically shortens the blog post URL via ref.li for twitter and can be used to hide your referer.
 
 == Description ==
 
@@ -27,6 +27,11 @@ Thanks!
 1. Upload the `refli-short-urls` folder to `/wp-content/plugins/`.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. In the blog post edit window using Button "Get shortlink" to get short link of this post.
+
+
+== Screenshots ==
+
+1. The Get Shortlink button in Post Editor
 
 == Changelog ==
 
