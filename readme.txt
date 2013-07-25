@@ -22,7 +22,7 @@ http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 
 Advanced Users only:
 In you single.php file place:
-"Shortlink: <pre><?php echo refli_show_url() ?></pre>"
+&quot;Shortlink: &lt;?php echo refli_show_url() ?&gt;&quot;
 to automatically show post shortlink to your visitors
 
 
