@@ -21,11 +21,13 @@ For support use WordPress.org or this page:
 http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 
 Advanced Users only:
+<p>
 In you single.php file place:
+</p>
 <pre>&quot;Shortlink: &lt;?php echo refli_show_url() ?&gt;&quot;</pre>
 to automatically show post shortlink to your visitors
 
-
+Enjoy!
 Thanks!
 
 == Installation ==
