@@ -32,7 +32,7 @@ or you can use refli_show_url() anywhere in your template to print the shortlink
 <h2>Refli Chrome Extension</h2>
 <p>
 Quickly Shorten any link just by clicking the extension, then copy your shortlink
-<a target="_blank" href="http://ref.li/asset/refli%20chrome.crx">Click here to download</a>
+<a target="_blank" href="http://ref.li/asset/refli-chrome.crx">Click here to download</a>
 </p>
 
 Enjoy!
