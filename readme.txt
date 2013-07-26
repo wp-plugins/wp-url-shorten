@@ -14,13 +14,13 @@ Automatically shortens the blog post URL via ref.li for twitter and can be used 
 This plugin adds ability to instantly create short URL/link for post, pages, categories, archieves, users, tags, custom taxonomies or custom post types and stores it
 in the database, to make it easier for users to recall and share it with friends and readers, it can also be used to hide your referrer links.
 
-Plugin homepage:
+<strong>Plugin homepage:</strong>
 http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 
 For support use WordPress.org or this page:
 http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 
-<h2>Advanced Users only:</h2>
+<strong>Advance users only:</strong>
 <p>
 In your single.php or single-custom.php file place:
 </p>
@@ -29,7 +29,7 @@ After &lt;?php the_content(); ?&gt;
 to automatically show post shortlink to your visitors.
 or you can use refli_show_url() anywhere in your template to print the shortlink.
 
-<h2>Refli Chrome Extension</h2>
+<strong>Refli Chrome Extension</strong>
 <p>
 Quickly Shorten any link just by clicking the extension, then copy your shortlink
 <a target="_blank" href="http://ref.li/asset/refli-chrome.crx">Click here to download</a>
