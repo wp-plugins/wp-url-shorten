@@ -21,7 +21,8 @@ For support use WordPress.org or this page:
 http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 
 <strong>Video Tutorial on Autmatically showing shortlinks</strong>
-<p><iframe src="http://www.screenr.com/embed/NKpH" width="500" height="305" frameborder="0"></iframe>
+<p>
+<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0'width='500' height='305'><param name='movie' value='http://cdn.screenr.com/public/1.8/flash/screenr.swf' /><param name='flashvars' value='i=1023749&h=t&svr=http://www.screenr.com/&vEmbed=&lt;iframe src=&quot;http://www.screenr.com/embed/NKpH&quot; width=&quot;500&quot; height=&quot;305&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;' /><param name='allowFullScreen' value='true' /><param name='wmode' value='opaque' /><param name='AllowScriptAccess' value='always' /><embed wmode='opaque' AllowScriptAccess='always' src='http://cdn.screenr.com/public/1.8/flash/screenr.swf' flashvars='i=1023749&h=t&svr=http://www.screenr.com/&vEmbed=&lt;iframe src=&quot;http://www.screenr.com/embed/NKpH&quot; width=&quot;500&quot; height=&quot;305&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;' allowFullScreen='true' width='500' height='305' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object>
 </p>
 
 <strong>Advance users only:</strong>
