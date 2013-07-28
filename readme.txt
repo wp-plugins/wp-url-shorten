@@ -20,6 +20,10 @@ http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 For support use WordPress.org or this page:
 http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 
+<strong>Video Tutorial on Autmatically showing shortlinks</strong>
+<p><iframe src="http://www.screenr.com/embed/NKpH" width="500" height="305" frameborder="0"></iframe>
+</p>
+
 <strong>Advance users only:</strong>
 <p>
 In your single.php or single-custom.php file place:
