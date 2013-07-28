@@ -23,6 +23,7 @@ http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 <strong>Video Tutorial on Autmatically showing shortlinks</strong>
 
 <iframe src="http://www.screenr.com/embed/NKpH" width="500" height="305" frameborder="0"></iframe>
+<a href="http://ref.li/795895">http://ref.li/795895</a>
 
 
 <strong>Advance users only:</strong>
