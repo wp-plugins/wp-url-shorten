@@ -13,7 +13,19 @@ Automatically shortens the blog post URL via ref.li for twitter and can be used 
 
 This plugin adds ability to instantly create short URL/link for post, pages, categories, archieves, users, tags, custom taxonomies or custom post types and stores it
 in the database, to make it easier for users to recall and share it with friends and readers, it can also be used to hide your referrer links.
-
+<p>
+To Show the Short link of current page or post use the following shortcode on post or widget:
+</p>
+<p>
+[refli-url]
+</p>
+<p>
+To quickly shorten any External URL within post use the following short code:
+</p>
+Example: taking google.com as example
+<p>
+[refli-url u="http://google.com"]
+</p>
 <strong>Plugin homepage:</strong>
 http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 
@@ -56,6 +68,9 @@ Thanks!
 1. The Get Shortlink button in Post Editor screenshot-1.png
 
 == Changelog ==
+
+= 0.5 =
+* Added Shortcode functionality, instantly shorten external links using shortcode.
 
 = 0.2 =
 * Fix bug in call to undefined function.
