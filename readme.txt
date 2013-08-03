@@ -7,7 +7,7 @@ Tested up to: 3.6
 Stable tag: trunk
 License: GPLv3
 
-Automatic wordpress link shortner, shorterns posts, pages, categories, affiliate links, shorten external links or any URL via ref.li for twitter and can be used to hide your referrer.
+Automatic wordpress link shortner, shorterns posts, pages, categories, affiliate links, shorten external links or any URL via ref.li
 
 == Description ==
 
