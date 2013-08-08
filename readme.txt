@@ -66,6 +66,7 @@ Thanks!
 == Screenshots ==
 
 1. The Get Shortlink button in Post Editor screenshot-1.png
+2. Refli screenshot-2.png
 
 == Changelog ==
 
