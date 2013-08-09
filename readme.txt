@@ -1,5 +1,5 @@
-=== WP URLs Shorten ===
-Contributors: Ali
+=== WP URLs Shorten [Official] ===
+Contributors: Ali, Zinger Zee
 Donate link: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 Tags: short url, short, url, url shorten, shorten url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging, refli
 Requires at least: 3.0
@@ -66,7 +66,7 @@ Thanks!
 == Screenshots ==
 
 1. The Get Shortlink button in Post Editor screenshot-1.png
-2. Refli screenshot-2.png
+2. Refli Second screenshot-2.png
 
 == Changelog ==
 
