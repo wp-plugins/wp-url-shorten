@@ -44,10 +44,13 @@ or you can use refli_show_url() anywhere in your template to print the shortlink
 <strong>Refli Chrome Extension</strong>
 <p>
 Quickly Shorten any link just by clicking the extension, then copy your shortlink
-<a target="_blank" href="http://ref.li/asset/refli-chrome.crx">Click here to download</a>
+<a target="_blank" href="http://ref.li/asset/refli-chrome.crx">Download it here</a>
 </p>
 
-Javascript plugin is coming soon which will shorten all external links in website.
+Javascript plugin is coming soon which will shorten all external links in website page.
+
+<strong>Report links</strong>
+<p>Instantly report any suspicious, spam, malware link to refli directly for removal <a href="ref.li/report.php">ref.li/report.php</a></p>
 
 Hope you Enjoyed this plugin!
 Thanks!
