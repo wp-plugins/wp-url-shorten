@@ -53,7 +53,7 @@ Javascript plugin is coming soon which will shorten all external links in websit
 
 <strong>Report links</strong>
 
-<p>Instantly report any suspicious, spam, malware link to refli directly for removal <a href="ref.li/report.php">ref.li/report.php</a></p>
+<p>Instantly report any suspicious, spam, malware link to refli directly for removal <a href="http://ref.li/report.php">ref.li/report.php</a></p>
 
 Get Shortend! Thousands of Unique Custom Shortlinks are available Get them before someone does.
 Thanks!
