@@ -1,6 +1,6 @@
 === WP URLs Shorten [Official] ===
 Contributors: Ali, Zinger Zee
-Donate link: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=alisaleem252%40gmail%2ecom&lc=US&item_name=Refli&item_number=refli&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest
 Tags: short url, short, url, url shorten, shorten url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging, refli
 Requires at least: 3.0
 Tested up to: 3.6
@@ -75,6 +75,12 @@ Thanks!
 2. Refli Second screenshot-2.png
 
 == Changelog ==
+
+= 1.0 =
+* Added Admin Menu.
+* Shortcode Usage and help in menu page.
+* Report a link.
+* Bug fixed for twitter display.
 
 = 0.5 =
 * Added Shortcode functionality, instantly shorten external links using shortcode.

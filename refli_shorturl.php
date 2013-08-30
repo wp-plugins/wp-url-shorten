@@ -3,7 +3,7 @@
 Plugin Name: WP URL Shortener
 Plugin URI: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
-Version: 0.5
+Version: 1.0
 Author: Mohammad Ali
 Author URI: http://thesetemplates.com/
 */
@@ -122,7 +122,7 @@ class refli_Short_URL
     /**
      * Option list (default settings)
      */
-    /*
+    
     function options()
     {
         return array(
@@ -131,12 +131,12 @@ class refli_Short_URL
            'TwitterLink'    => 'Y',
            );
     }
-    */
+    
     /**
      * Plugin settings
      *
      */
-    /*
+    
     function settings()
     {
         $apiUrls = $this->api_urls();
@@ -158,16 +158,16 @@ class refli_Short_URL
         }
         include refli_plugin_path . 'template/settings.tpl.php';
     }
-    */
+    
     /**
      *
      */
-    /*
+    
     function admin_menu()
     {
-        add_options_page('refli Short URL', 'Short URLs', 10, 'refli_shorturl-settings', array(&$this, 'settings'));
+        add_options_page('WP Short URLs by Ref.li', 'WP URLs Shorten', 10, 'refli_shorturl-settings', array(&$this, 'settings'));
     }
-    */
+    
     /**
      * Display the short URL
      */
@@ -237,7 +237,7 @@ if (is_admin()) {
     add_action('edit_post', array(&$refli, 'create'));
     add_action('save_post', array(&$refli, 'create'));
     add_action('publish_post', array(&$refli, 'create'));
-    //add_action('admin_menu', array(&$refli, 'admin_menu'));
+    add_action('admin_menu', array(&$refli, 'admin_menu'));
     add_filter('pre_get_shortlink',  array(&$refli, 'pre_get_shortlink'), 10, 4);
 } else {
     add_filter('the_content', array(&$refli, 'display'));
