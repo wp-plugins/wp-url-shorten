@@ -77,7 +77,7 @@ Thanks!
 == Changelog ==
 
 = 1.2 =
-* Display Shotlink Fixed.
+* Display Shortlink Fixed.
 * Display Tweet this link fixed.
 
 = 1.0 =
