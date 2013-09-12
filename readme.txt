@@ -76,6 +76,10 @@ Thanks!
 
 == Changelog ==
 
+= 1.2 =
+* Display Shotlink Fixed.
+* Display Tweet this link fixed.
+
 = 1.0 =
 * Added Admin Menu.
 * Shortcode Usage and help in menu page.
