@@ -3,7 +3,7 @@
 Plugin Name: WP URL Shortener
 Plugin URI: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
-Version: 1.2
+Version: 1.3
 Author: Mohammad Ali
 Author URI: http://thesetemplates.com/
 */

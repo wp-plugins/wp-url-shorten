@@ -1,9 +1,9 @@
-=== WP URLs Shorten + Social link icons[Official] ===
+=== WP URLs Shortener + Social icons [Official] ===
 Contributors: Ali, Zinger Zee, TheseTemplates
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=alisaleem252%40gmail%2ecom&lc=US&item_name=Refli&item_number=refli&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest
 Tags: short url, short, url, url shorten, shorten url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging, refli
 Requires at least: 3.0
-Tested up to: 3.6
+Tested up to: 3.6.1
 Stable tag: trunk
 License: GPLv3
 
@@ -74,8 +74,12 @@ Thanks!
 
 1. The Get Shortlink button in Post Editor screenshot-1.png
 2. Refli Second screenshot-2.png
+3. Refli Third screenshot-3.png
 
 == Changelog ==
+
+= 1.3 =
+* Social icons with one click share.
 
 = 1.2 =
 * Display Shortlink Fixed.
