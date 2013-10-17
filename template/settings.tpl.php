@@ -58,7 +58,7 @@ To quickly shorten any External URL within post use the following short code:
 
   <tr valign="top">
     <th scope="row">
-        <label for="TwitterLink" style="font-weight:bold;"><?php echo __('Display Twitter Link') ?></label>
+        <label for="TwitterLink" style="font-weight:bold;"><?php echo __('Display Social Icons') ?></label>
     </th>
   </tr>
   <tr>
