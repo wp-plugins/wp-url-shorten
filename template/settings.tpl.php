@@ -85,5 +85,10 @@ To quickly shorten any External URL within post use the following short code:
 </form>
 <br />
 <br />
+<strong>Best & Cheap Hosting for WordPress</strong>
+<a target="_blank" href="http://www.fatcow.com/join/index.bml?bannerID=1021&AffID=714946"><img src="http://www.fatcow.com/affiliate/banners/1021" style="border:0px" alt="affiliate_link"></a>
+<li>Unlimited Storage</li>
+<li>Unlimited Bandwidth</li>
+<li>Unlimited Database</li>
 <br />
     <a target="_blank" href="http://ref.li" title="Home">Ref.li</a> |     <a target="_blank" href="http://ads.ref.li" title="Home">Advertise with us</a>  | <a target="_blank" href="http://ref.li/api-about.php" title="Developer API">Developer API &amp; Extensions</a> | <a target="_blank" href="http://ref.li/report.php" title="Report a link">Report a link</a>  
