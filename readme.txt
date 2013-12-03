@@ -47,13 +47,11 @@ Quickly Shorten any link just by clicking the extension, then copy your shortlin
 <a target="_blank" href="http://ref.li/asset/refli-chrome.crx">Download it here</a>
 </p>
 
-<p>
-Javascript plugin is coming soon which will shorten all external links in website page.
-</p>
+
 
 <strong>Report links</strong>
 
-<p>Instantly report any suspicious, spam, malware link to refli directly for removal <a href="http://ref.li/report.php">ref.li/report.php</a></p>
+<p>Instantly report any suspicious, spam, malware link to refli directly for removal <a href="http://ref.li/contact">Ref.li/report.php</a></p>
 <p>We use Google Safe Browsing API to detect links with malware, so this is 100% safe</p>
 
 Get Shortend! Thousands of Unique Custom Shortlinks are available Get them before someone does.
