@@ -1,5 +1,5 @@
 <br />
-    <a target="_blank" href="http://ref.li" title="Home">Ref.li</a> |     <a target="_blank" href="http://ads.ref.li" title="Home">Advertise with us</a>  | <a target="_blank" href="http://ref.li/api-about.php" title="Developer API">Developer API &amp; Extensions</a> | <a target="_blank" href="http://ref.li/report.php" title="Report a link">Report a link</a>  
+    <a target="_blank" href="http://ref.li" title="Home">Ref.li</a> |     <a target="_blank" href="http://ads.ref.li" title="Home">Advertise with us</a>  | <a target="_blank" href="http://ref.li/page/developer" title="Developer API">Developer API &amp; Extensions</a> | <a target="_blank" href="http://ref.li/contact" title="Report a link">Report a link</a>  
 <br />
 <br />
 <br />

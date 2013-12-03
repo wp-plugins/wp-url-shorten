@@ -3,12 +3,12 @@
 Plugin Name: WP URL Shortener
 Plugin URI: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
-Version: 1.3
+Version: 2
 Author: WPFIXIT
 Author URI: http://thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/
 */
 
-define('DEFAULT_API_URL', 'http://ref.li/api.php?url=%s');
+define('DEFAULT_API_URL', 'http://ref.li/api?api=UCKfnNSQiiKk&format=text&url=%s');
 define('refli_plugin_path', plugin_dir_path(__FILE__) );
 
 /* returns a result from url */
@@ -27,7 +27,7 @@ if ( ! function_exists( 'curl_get_url' ) ){
 
 if ( ! function_exists( 'get_refli_url' ) ){ /* what's the odds of that? */
  function get_refli_url($url,$format='txt') {
-   $connectURL = 'http://ref.li/api.php?url='.$url;
+   $connectURL = 'http://ref.li/api?api=UCKfnNSQiiKk&format=text&url='.$url;
    return curl_get_url($connectURL);
  }
 }
@@ -70,7 +70,7 @@ class refli_Short_URL
         return array(
             array(
                 'name' => 'ref.li Safe Url Shortener',
-                'url'  => 'http://ref.li/api.php?url=%s',
+                'url'  => 'http://ref.li/api?api=UCKfnNSQiiKk&format=text&url=%s',
                 )
             );
     }
