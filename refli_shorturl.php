@@ -5,12 +5,14 @@ Plugin URI: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.h
 Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
 Version: 2.0
 Author: WPFIXIT
-Author URI: http://thesetemplates.info/services/professionally-fix-troubleshoot-your-wordpress-issue-error-bug/
+Author URI: http://microlancer.com/user/alisaleem252
 */
 
-define('DEFAULT_API_URL', 'http://ref.li/api?api=UCKfnNSQiiKk&format=text&url=%s');
-define('refli_plugin_path', plugin_dir_path(__FILE__) );
+// use Api key input
+$var_Apikey = get_option('new_Api_key');
 
+define('DEFAULT_API_URL', 'http://ref.li/api?api='.$var_Apikey.'&format=text&url=%s');
+define('refli_plugin_path', plugin_dir_path(__FILE__) );
 /* returns a result from url */
 if ( ! function_exists( 'curl_get_url' ) ){
   function curl_get_url($url) {
@@ -26,9 +28,11 @@ if ( ! function_exists( 'curl_get_url' ) ){
 }
 
 if ( ! function_exists( 'get_refli_url' ) ){ /* what's the odds of that? */
- function get_refli_url($url,$format='txt') {
-   $connectURL = 'http://ref.li/api?api=UCKfnNSQiiKk&format=text&url='.$url;
+function get_refli_url($url,$format='txt') {
+   global $var_Apikey;
+   $connectURL = 'http://ref.li/api?api='.$var_Apikey.'&format=text&url='.$url;
    return curl_get_url($connectURL);
+   
  }
 }
 
@@ -70,7 +74,7 @@ class refli_Short_URL
         return array(
             array(
                 'name' => 'ref.li Safe Url Shortener',
-                'url'  => 'http://ref.li/api?api=UCKfnNSQiiKk&format=text&url=%s',
+                'url'  => 'http://ref.li/api?api='.$var_Apikey.'&format=text&url=%s',
                 )
             );
     }
@@ -242,3 +246,53 @@ if (is_admin()) {
 } else {
     add_filter('the_content', array(&$refli, 'display'));
 }
+
+   //Api key input admin menu page
+// create custom plugin settings menu
+add_action('admin_menu', 'shortlink_create_menu');
+function shortlink_create_menu() {
+
+	//create new top-level menu
+	add_menu_page('Ref.li Plugin Settings', 'Ref.li', 'administrator', __FILE__, 'short_link_settings_page',plugins_url('icon.png', __FILE__));
+	//call register settings function
+	add_action( 'admin_init', 'register_mysettings' );
+}
+function register_mysettings() {
+	//register our settings
+	register_setting( 'shortlink-settings-group', 'new_Api_key' );
+	
+}
+add_action( 'admin_init', 'register_mysettings' );
+
+function  short_link_settings_page() {
+?>
+<div class="wrap">
+<h2>Api key Setting</h2>
+
+<form method="post" action="options.php">
+    <?php settings_fields( 'shortlink-settings-group' ); ?>
+    <?php do_settings_sections( 'shortlink-settings-group' ); ?>
+    <table class="form-table">
+        <tr valign="top">
+        <th scope="row">Enter Api key</th>
+        <td><input type="text" name="new_Api_key" value="<?php echo get_option('new_Api_key');?>" /> <a href="http://ref.li/user/register" target="_blank">Get API Key?</a></td>
+        </tr>
+    </table>
+<?php submit_button(); ?>
+</form>
+</div>
+<?php } 
+register_activation_hook(__FILE__, 'refli_plugin_activate');
+add_action('admin_init', 'refli_plugin_redirect');
+
+function refli_plugin_activate() {
+    add_option('refli_plugin_do_activation_redirect', true);
+}
+
+function refli_plugin_redirect() {
+    if (get_option('refli_plugin_do_activation_redirect', false)) {
+        delete_option('refli_plugin_do_activation_redirect');
+        wp_redirect('options-general.php?page=wp-url-shorten/refli_shorturl.php');
+    }
+}
+?>

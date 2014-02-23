@@ -76,7 +76,9 @@ Thanks!
 
 == Changelog ==
 
-= 1.3 =
+
+
+= 2.0 =
 * Introduced API system, Custom URL tracking, Login to ref.li to see stats.
 
 
