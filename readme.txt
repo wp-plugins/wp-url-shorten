@@ -3,7 +3,7 @@ Contributors: Ali, Zinger Zee, TheseTemplates
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=alisaleem252%40gmail%2ecom&lc=US&item_name=Refli&item_number=refli&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest
 Tags: short url, short, url, url shorten, shorten url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging, refli
 Requires at least: 3.0
-Tested up to: 3.8.2
+Tested up to: 3.9
 Stable tag: trunk
 License: GPLv3
 
@@ -41,13 +41,6 @@ In your single.php or single-custom.php file place:
 After &lt;?php the_content(); ?&gt;
 to automatically show post shortlink to your visitors for everypost.
 or you can use refli_show_url() anywhere in your template to print the shortlink.
-
-<strong>Refli Chrome Extension</strong>
-<p>
-Quickly Shorten any link just by clicking the extension, then copy your shortlink
-<a target="_blank" href="http://ref.li/asset/refli-chrome.crx">Download it here</a>
-</p>
-
 
 
 <strong>Report links</strong>
