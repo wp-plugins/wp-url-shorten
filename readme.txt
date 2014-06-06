@@ -13,7 +13,7 @@ Automatic wordpress link shortner, shorterns posts, pages, categories, affiliate
 <p>Credits: http://www.fiverr.com/wpfixit/develop-a-wordpress-plugin
 </p>
 This plugin adds ability to instantly create short link for your post, pages, categories, archieves, users, tags, custom taxonomies or custom post types or anything then stores it
-in the database, to make it easier for users to recall and share it with friends and readers, it can also be used to hide your referrer links by simpling puting refli short codes to shorten any external link in post.
+in the database, to make it easier for users to recall and share it with friends and readers, it can also be used to hide your referrer links by simply placing refli short codes to shorten any external link in post.
 <p>
 To Show the Short link of current page or post use the following shortcode on post, page or sidebar widget:
 </p>
