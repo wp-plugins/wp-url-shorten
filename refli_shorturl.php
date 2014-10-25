@@ -278,6 +278,11 @@ function  short_link_settings_page() {
         <td><input type="text" name="new_Api_key" value="<?php echo get_option('new_Api_key');?>" /> <a href="http://ref.li/user/register" target="_blank">Get API Key?</a></td>
         </tr>
     </table>
+    <br />
+<div>
+<a href="https://chrome.google.com/webstore/detail/refli-official-link-short/hhkcnkdnhpcnopnddnnffdjapkgdokbj" target="_blank">
+<img src="http://ref.li/static/flat/chrome.png" /></a>
+</div>
 <?php submit_button(); ?>
 </form>
 </div>
