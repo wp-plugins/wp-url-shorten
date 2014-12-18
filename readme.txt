@@ -3,14 +3,14 @@ Contributors: AliSaleem252, zinger252, TheseTemplates
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=alisaleem252%40gmail%2ecom&lc=US&item_name=Refli&item_number=refli&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest
 Tags: short url, short, url, url shorten, shorten url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging, refli
 Requires at least: 3.0
-Tested up to: 4.0
+Tested up to: 4.0.1
 Stable tag: trunk
 License: GPLv3
 
 Automatic wordpress link shortner, shorterns posts, pages, categories, affiliate links, shorten external links or any URL via ref.li
 
 == Description ==
-<p>Credits: http://www.fiverr.com/wpfixit/develop-a-wordpress-plugin
+<p>Credits: https://studio.envato.com/users/alisaleem252
 </p>
 This plugin adds ability to instantly create short link for your post, pages, categories, archieves, users, tags, custom taxonomies or custom post types or anything then stores it
 in the database, to make it easier for users to recall and share it with friends and readers, it can also be used to hide your referrer links by simply placing refli short codes to shorten any external link in post.
