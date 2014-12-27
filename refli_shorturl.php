@@ -14,6 +14,7 @@ $var_Apikey = get_option('new_Api_key');
 
 define('DEFAULT_API_URL', 'http://ref.li/api?api='.$var_Apikey.'&format=text&url=%s');
 define('refli_plugin_path', plugin_dir_path(__FILE__) );
+define('refli_plugin_url', plugin_dir_url(__FILE__) );
 /* returns a result from url */
 if ( ! function_exists( 'curl_get_url' ) ){
   function curl_get_url($url) {
