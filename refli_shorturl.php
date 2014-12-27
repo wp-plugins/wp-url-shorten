@@ -5,7 +5,7 @@
 * Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
 * Version: 3.0
 * Author: alisaleem252
-* Author URI: http://microlancer.com/user/alisaleem252
+* Author URI: https://studio.envato.com/users/alisaleem252
 * Text Domain: refli
 */
 
