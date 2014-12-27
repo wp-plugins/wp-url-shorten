@@ -3,10 +3,10 @@
 <br />
 <br />
 <br />
-<h2>Usage & Shortcodes:</h2>
+<h2><?php _e('Usage & Shortcodes','refli') ?>:</h2>
 <li>
 <p>
-To display the Short link of current page use the following shortcode on post, page or sidebar widget:
+<?php _e('To display the Short link of current page use the following shortcode on post, page or sidebar widget','refli')?>:
 </p>
 <p>
 <strong>[refli-url]</strong>
@@ -14,35 +14,17 @@ To display the Short link of current page use the following shortcode on post, p
 </li>
 <li>
 <p>
-To quickly shorten any External URL within post use the following short code:
+<?php _e('To quickly shorten any External URL within post use the following short code','refli')?>:
 </p>
 <p>Example: Using <a target="_blank" href="https://www.google.com/webhp?hl=en&tab=ww#hl=en&q=ref.li" ><font color="blue">https://www.google.com/webhp?hl=en&tab=ww#hl=en&q=ref.li</font></a> as extrnal link, then use following code</p>
 </li>
 <p><strong>[refli-url u="<font color="blue">https://www.google.com/webhp?hl=en&tab=ww#hl=en&q=ref.li</font>"]</p></strong>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_donations">
-<input type="hidden" name="business" value="alisaleem252@gmail.com">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="item_name" value="Refli">
-<input type="hidden" name="item_number" value="refli">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
 <form method="post" action="./options-general.php?page=refli_shorturl-settings" id="refli_shorturl_settings" style="margin-top:2em;margin-left:1em;">
 
 <table class="form-table">
 
-  <tr valign="top">
-    <th scope="row">
-        <label for="ApiUrl" style="font-weight:bold;"><?php echo __('Refli Short URL Service') ?></label><br />
-        <?php echo __('This plugin is free so your Donation is important for us, We are working on more improvements, such as showing all short links with complete visitor statistics including hits, unique hits, referrers, visitors by country in Admin Panel.') ?><br /><br />
-    </th>
-  </tr>
+
 
   <tr valign="top">
     <th scope="row">
@@ -71,7 +53,7 @@ To quickly shorten any External URL within post use the following short code:
 
   <tr valign="top">
     <th scope="row">
-        <input type="submit" name="save" value="<?php echo __('Save') ?>" />
+        <input type="submit" class="button-primary" name="save" value="<?php echo __('Save') ?>" />
     </th>
     <td>
 
@@ -84,11 +66,4 @@ To quickly shorten any External URL within post use the following short code:
 
 </form>
 <br />
-<br />
-<strong>Best & Cheap Hosting for WordPress</strong>
-<a target="_blank" href="http://www.fatcow.com/join/index.bml?bannerID=1021&AffID=714946"><img src="http://www.fatcow.com/affiliate/banners/1021" style="border:0px" alt="affiliate_link"></a>
-<li>Unlimited Storage</li>
-<li>Unlimited Bandwidth</li>
-<li>Unlimited Database</li>
-<br />
-    <a target="_blank" href="http://ref.li" title="Home">Ref.li</a> |     <a target="_blank" href="http://ads.ref.li" title="Home">Advertise with us</a>  | <a target="_blank" href="http://ref.li/api-about.php" title="Developer API">Developer API &amp; Extensions</a> | <a target="_blank" href="http://ref.li/report.php" title="Report a link">Report a link</a>  
+    <a target="_blank" href="http://ref.li" title="Home">Ref.li</a> |     <a target="_blank" href="http://ref.li/page/advertise" title="Home">Advertise with us</a>  | <a target="_blank" href="http://ref.li/page/developer" title="Developer API">Developer API &amp; Extensions</a> | <a target="_blank" href="http://ref.li/contact" title="Report a link">Report a link</a>  

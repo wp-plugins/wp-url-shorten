@@ -1,11 +1,12 @@
 <?php
 /*
-Plugin Name: WP URL Shortener
-Plugin URI: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
-Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
-Version: 2.0
-Author: WPFIXIT
-Author URI: http://microlancer.com/user/alisaleem252
+* Plugin Name: WP URL Shortener
+* Plugin URI: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
+* Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
+* Version: 3.0
+* Author: alisaleem252
+* Author URI: http://microlancer.com/user/alisaleem252
+* Text Domain: refli
 */
 
 // use Api key input
@@ -246,6 +247,23 @@ if (is_admin()) {
 } else {
     add_filter('the_content', array(&$refli, 'display'));
 }
+add_action('admin_enqueue_scripts','refli_admin_scripts');
+add_action('admin_head','refli_head');
+
+function refli_admin_scripts(){
+	wp_enqueue_script('refli-table','//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js',array('jquery'));
+	wp_enqueue_style('refli-table','//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css');
+}
+function refli_head(){
+	echo '<script>
+	jQuery(document).ready(function(){
+    jQuery("#myTable").DataTable();
+});
+</script>
+';
+	
+	
+}
 
    //Api key input admin menu page
 // create custom plugin settings menu
@@ -278,15 +296,82 @@ function  short_link_settings_page() {
         <td><input type="text" name="new_Api_key" value="<?php echo get_option('new_Api_key');?>" /> <a href="http://ref.li/user/register" target="_blank">Get API Key?</a></td>
         </tr>
     </table>
-    <br />
-<div>
-<a href="https://chrome.google.com/webstore/detail/refli-official-link-short/hhkcnkdnhpcnopnddnnffdjapkgdokbj" target="_blank">
-<img src="http://ref.li/static/flat/chrome.png" /></a>
-</div>
 <?php submit_button(); ?>
 </form>
+<div>
+<h2>Statistics</h2>
+<?php
+$posts = get_posts('posts_per_page=5');
+global $wpdb;
+$allurls = $wpdb->get_results( 'SELECT * FROM  wp_postmeta WHERE  meta_key =  "refliShortURL"', OBJECT);
+//print_r($allurls);
+echo '<table id="myTable">';
+echo '<thead>';
+echo '<th>Long URL</th>';
+echo '<th>Short URL</th>';
+echo '<th>Details</th>';
+echo '<th>Clicks</th>';
+echo '</thead>';
+echo '<tbody>';
+if (!empty($allurls)){
+foreach($allurls as $singleurl){
+	$short = $singleurl->meta_value;//get_post_meta($post->ID,'refliShortURL',true);
+	$clicks = file_get_contents('http://ref.li/api?api='.get_option('new_Api_key').'&short='.$short);
+	$clicks = json_decode($clicks);
+	if ($clicks->error != 1){
+	echo '<tr>';
+	echo '<td>'.$clicks->long.'</td>';
+	echo '<td>'.$short.'</td>';
+	echo '<td><a target="_blank" href="'.$short.'+">'.__('More Details').'..</a></td>';
+	echo '<td>'.$clicks->clicks.'</td>';
+	echo '</tr>';
+	} // if no error
+//	http://ref.li/api?api=UCKfnNSQiiKk&short=http://ref.li/bEZnF
+}
+}
+echo '</tbody>';
+echo '</table>';
+?>
 </div>
+
+</div>
+
 <?php } 
+
+function refli_add_meta_box() {
+
+		add_meta_box(
+			'refli_sectionid',
+			__( 'Short Link Stats', 'refli' ),
+			'refli_meta_box_callback',
+			'post','side','high'
+		);
+	
+}
+function refli_meta_box_callback( $post ) {
+
+	// Add an nonce field so we can check for it later.
+	
+
+	/*
+	 * Use get_post_meta() to retrieve an existing value
+	 * from the database and use the value for the form.
+	 */
+	$short = get_post_meta( $post->ID, 'refliShortURL', true );
+
+	echo '<h2>';
+	$clicks = file_get_contents('http://ref.li/api?api='.get_option('new_Api_key').'&short='.$short);
+	$clicks = json_decode($clicks);
+	echo $clicks->clicks;
+	_e( ' Clicks', 'refli' );
+	echo '</h2> ';
+	echo '<a target="_blank" href="'.$short.'+">'. __('More Details').'..</a>';
+
+}
+add_action( 'add_meta_boxes', 'refli_add_meta_box' );
+
+
+/* ACTIVATION */
 register_activation_hook(__FILE__, 'refli_plugin_activate');
 add_action('admin_init', 'refli_plugin_redirect');
 

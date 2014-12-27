@@ -71,6 +71,15 @@ Thanks!
 == Changelog ==
 
 
+= 3.0 =
+* Improved Social Icons
+* Improved Settings
+* Live Statistics of Short URLS
+* Added Meta Box For Live Short URL Stats
+
+
+= 2.3 =
+* Improved Social Icons
 
 = 2.0 =
 * Introduced API system, Custom URL tracking, Login to ref.li to see stats.
