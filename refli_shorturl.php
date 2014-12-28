@@ -8,6 +8,24 @@
 * Author URI: https://studio.envato.com/users/alisaleem252
 * Text Domain: refli
 */
+add_filter( 'plugin_row_meta', 'refli_plugin_row_meta', 10, 2 );
+
+function refli_plugin_row_meta( $links, $file ) {
+
+	if ( strpos( $file, 'refli_shorturl.php' ) !== false ) {
+		$new_links = array(
+					'<a href="https://chrome.google.com/webstore/detail/refli-official-link-short/hhkcnkdnhpcnopnddnnffdjapkgdokbj" target="_blank">Chrome Extension</a>',
+					'<a href="http://ref.li/page/advertise" target="_blank">Advertise</a>',
+					'<a href="http://ref.li/user/" target="_blank">Get API</a>',
+					
+				);
+		
+		$links = array_merge( $links, $new_links );
+	}
+	
+	return $links;
+}
+
 
 // use Api key input
 $var_Apikey = get_option('new_Api_key');
