@@ -10,6 +10,8 @@ License: GPLv3
 Automatic wordpress link shortner, shorterns posts, pages, categories, affiliate links, shorten external links or any URL via ref.li
 
 == Description ==
+<p>** NOW WITH CLICK STATS FOR EACH POST AND ALL SHORTLINKS **</p>
+
 <p>Credits: https://studio.envato.com/users/alisaleem252
 </p>
 This plugin adds ability to instantly create short link for your post, pages, categories, archieves, users, tags, custom taxonomies or custom post types or anything then stores it
@@ -67,6 +69,8 @@ Thanks!
 1. The Get Shortlink button in Post Editor screenshot-1.png
 2. Refli Second screenshot-2.png
 3. Refli Third screenshot-3.png
+4. Refli Third screenshot-4.png
+5. Refli Third screenshot-5.png
 
 == Changelog ==
 
