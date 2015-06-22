@@ -3,7 +3,7 @@
 * Plugin Name: WP URL Shortener
 * Plugin URI: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 * Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
-* Version: 3.0
+* Version: 3.1
 * Author: alisaleem252
 * Author URI: https://studio.envato.com/users/alisaleem252
 * Text Domain: refli
@@ -322,7 +322,7 @@ function  short_link_settings_page() {
 <?php
 $posts = get_posts('posts_per_page=5');
 global $wpdb;
-$allurls = $wpdb->get_results( 'SELECT * FROM  wp_postmeta WHERE  meta_key =  "refliShortURL"', OBJECT);
+$allurls = $wpdb->get_results( "SELECT * FROM  $wpdb->postmeta WHERE  meta_key =  'refliShortURL'", OBJECT);
 //print_r($allurls);
 echo '<table id="myTable">';
 echo '<thead>';
