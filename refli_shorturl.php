@@ -407,7 +407,7 @@ function refli_plugin_activate() {
 function refli_plugin_redirect() {
     if (get_option('refli_plugin_do_activation_redirect', false)) {
         delete_option('refli_plugin_do_activation_redirect');
-        wp_redirect('options-general.php?page=wp-url-shorten/refli_shorturl.php');
+        wp_redirect('admin.php?page=short_link_settings_page2');
     }
 }
 ?>
