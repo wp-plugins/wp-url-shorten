@@ -3,7 +3,7 @@
 * Plugin Name: WP URL Shortener
 * Plugin URI: http://www.thesetemplates.com/2013/07/wordpress-shorten-url-plugin.html
 * Description: Shortens URLS of your blog posts via ref.li service for twitter and can be used to hide referer
-* Version: 3.1
+* Version: 3.5
 * Author: alisaleem252
 * Author URI: https://studio.envato.com/users/alisaleem252
 * Text Domain: refli
@@ -153,6 +153,7 @@ class refli_Short_URL
            'ApiUrl'         => DEFAULT_API_URL,
            'Display'        => 'Y',
            'TwitterLink'    => 'Y',
+		   'Domain'			=> 'ref.li'
            );
     }
     
@@ -189,7 +190,10 @@ class refli_Short_URL
     
     function admin_menu()
     {
-        add_options_page('WP Short URLs by Ref.li', 'WP URLs Shorten', 10, 'refli_shorturl-settings', array(&$this, 'settings'));
+//        add_options_page('WP Short URLs by Ref.li', 'WP URLs Shorten', 10, 'refli_shorturl-settings', array(&$this, 'settings'));
+	add_menu_page('Ref.li Plugin Settings', 'Ref.li', 'administrator','short_link_settings_page', 'short_link_settings_page',plugins_url('icon.png', __FILE__));
+	add_submenu_page( 'short_link_settings_page', 'WP Short URLs by Ref.li','Settings' , 'manage_options', 'short_link_settings_page2', array(&$this, 'settings') ); 
+
     }
     
     /**
@@ -219,6 +223,8 @@ class refli_Short_URL
         }
 
         $shortUrlEncoded = urlencode($shortUrl);
+		$domain = $opt['Domain'];
+		str_replace('ref.li',$domain,$shortUrlEncoded);
 
         ob_start();
         include refli_plugin_path . 'template/public.tpl.php';
@@ -290,9 +296,9 @@ add_action('admin_menu', 'shortlink_create_menu');
 function shortlink_create_menu() {
 
 	//create new top-level menu
-	add_menu_page('Ref.li Plugin Settings', 'Ref.li', 'administrator', __FILE__, 'short_link_settings_page',plugins_url('icon.png', __FILE__));
+//	add_menu_page('Ref.li Plugin Settings', 'Ref.li', 'administrator', __FILE__, 'short_link_settings_page',plugins_url('icon.png', __FILE__));
 	//call register settings function
-	add_action( 'admin_init', 'register_mysettings' );
+//	add_action( 'admin_init', 'register_mysettings' );
 }
 function register_mysettings() {
 	//register our settings
@@ -381,7 +387,7 @@ function refli_meta_box_callback( $post ) {
 	echo '<h2>';
 	$clicks = file_get_contents('http://ref.li/api?api='.get_option('new_Api_key').'&short='.$short);
 	$clicks = json_decode($clicks);
-	echo $clicks->clicks;
+	echo isset($clicks->clicks) ? $clicks->clicks : '0';
 	_e( ' Clicks', 'refli' );
 	echo '</h2> ';
 	echo '<a target="_blank" href="'.$short.'+">'. __('More Details').'..</a>';

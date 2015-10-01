@@ -18,9 +18,9 @@
 </p>
 <p>Example: Using <a target="_blank" href="https://www.google.com/webhp?hl=en&tab=ww#hl=en&q=ref.li" ><font color="blue">https://www.google.com/webhp?hl=en&tab=ww#hl=en&q=ref.li</font></a> as extrnal link, then use following code</p>
 </li>
-<p><strong>[refli-url u="<font color="blue">https://www.google.com/webhp?hl=en&tab=ww#hl=en&q=ref.li</font>"]</p></strong>
+<p><pre>[refli-url u="<font color="blue">https://www.google.com/webhp?hl=en&tab=ww#hl=en&q=ref.li</font>"]</p></pre>
 
-<form method="post" action="./options-general.php?page=refli_shorturl-settings" id="refli_shorturl_settings" style="margin-top:2em;margin-left:1em;">
+<form method="post" id="refli_shorturl_settings" style="margin-top:2em;margin-left:1em;">
 
 <table class="form-table">
 
@@ -49,6 +49,23 @@
         <input type="radio" name="TwitterLink" value="N" <?php echo $opt['TwitterLink'] == 'N' ? 'checked="checked"' : '' ?> /> <?php echo __('No') ?>
     </td>
   <tr>
+  
+  <tr valign="top">
+    <th scope="row">
+        <label for="Domain" style="font-weight:bold;"><?php echo __('Domain') ?></label>
+    </th>
+  </tr>
+  <tr>
+    <td>
+        <select name="Domain">
+        <option value="ref.li" <?php echo $opt['Domain'] == 'ref.li' ? 'selected' : ''  ?>>Ref.li</option>
+        <option value="bux.li" <?php echo $opt['Domain'] == 'bux.li' ? 'selected' : ''  ?>>Bux.li</option>
+        <option value="eeb.me" <?php echo $opt['Domain'] == 'eeb.me' ? 'selected' : ''  ?>>eeb.me</option>
+        </select>
+    </td>
+  <tr>
+  
+  
 
 
   <tr valign="top">
