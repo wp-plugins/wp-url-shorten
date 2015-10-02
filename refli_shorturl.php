@@ -176,6 +176,7 @@ class refli_Short_URL
                 }
                 update_option('refliShortURL' . $key, $_POST[$key]);
             }
+			update_option('new_Api_key', $_POST['new_Api_key']);
         }
         foreach ($options AS $key => $val)
         {

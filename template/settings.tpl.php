@@ -25,7 +25,11 @@
 <table class="form-table">
 
 
-
+		<tr valign="top">
+        <th scope="row">Enter Api key</th>
+        <td><input type="text" name="new_Api_key" value="<?php echo get_option('new_Api_key');?>" /> <a href="http://ref.li/user/register" target="_blank">Get API Key?</a></td>
+        </tr>
+        
   <tr valign="top">
     <th scope="row">
         <label for="Display" style="font-weight:bold;"><?php echo __('Display Short URL') ?></label>
