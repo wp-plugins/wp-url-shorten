@@ -91,6 +91,7 @@ class refli_Short_URL
      */
     function api_urls()
     {
+		$var_Apikey = get_option('new_Api_key');
         return array(
             array(
                 'name' => 'ref.li Safe Url Shortener',
