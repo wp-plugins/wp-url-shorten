@@ -350,7 +350,7 @@ foreach($allurls as $singleurl){
 	echo '<td>'.$clicks->long.'</td>';
 	echo '<td>'.$short.'</td>';
 	echo '<td><a target="_blank" href="'.$short.'+">'.__('More Details').'..</a></td>';
-	echo '<td>'.$clicks->clicks.'</td>';
+	echo '<td>'.$clicks->click.'</td>';
 	echo '</tr>';
 	} // if no error
 //	http://ref.li/api?api=UCKfnNSQiiKk&short=http://ref.li/bEZnF
@@ -389,7 +389,7 @@ function refli_meta_box_callback( $post ) {
 	echo '<h2>';
 	$clicks = file_get_contents('http://ref.li/api?api='.get_option('new_Api_key').'&short='.$short);
 	$clicks = json_decode($clicks);
-	echo isset($clicks->clicks) ? $clicks->clicks : '0';
+	echo isset($clicks->click) ? $clicks->click : '0';
 	_e( ' Clicks', 'refli' );
 	echo '</h2> ';
 	echo '<a target="_blank" href="'.$short.'+">'. __('More Details').'..</a>';
